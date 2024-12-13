@@ -1,0 +1,62 @@
+<!----Develop a tool to convert units like length, weight,
+ or temperature, with dropdowns for selecting units
+  and input fields for user values------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor 1.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <h1>Unit-Converter</h1>
+            <form id="unitConverterForm">
+                <div class="input-group">
+                    <label for="valueInput">Value:</label>
+                    <input type="number" id="valueInput" placeholder="Enter value" required>
+                </div>
+                <div class="input-group">
+                    <label for="fromUnit">From Unit:</label>
+                    <select id="fromUnit">
+                        <option value="meters">Meters (m)</option>
+                        <option value="kilometers">Kilometers (km)</option>
+                        <option value="grams">Grams (g)</option>
+                        <option value="kilograms">Kilograms (kg)</option>
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="toUnit">To Unit:</label>
+                    <select id="toUnit">
+                        <option value="meters">Meters (m)</option>
+                        <option value="kilometers">Kilometers (km)</option>
+                        <option value="grams">Grams (g)</option>
+                        <option value="kilograms">Kilograms (kg)</option>
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <button type="submit">Convert</button>
+                </div>
+
+                <div id="result" class="result">
+                    <p>Converted Value: <span id="convertedValue">-</span></p>
+                    <p id="unitSymbols"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!------GROUP 13:
+Stanley Yamoah(1702643564)
+Angsomwine Marcel(1701690201)
+Dickson Yaw Agyeman(1704387427)
+------------------------------>
